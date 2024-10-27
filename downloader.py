@@ -4,7 +4,7 @@ import os
 import re
 
 #File directory for storing the .mp3 file
-music_store_dir = r'C:\Users\dadax\OneDrive\Desktop\Editing Resource\Viral Music'
+music_store_dir = r'C:\Users\dadax\OneDrive\Desktop\Editing\Viral Music'
 curr_working_dir = os.getcwd()
 
 #Extract Audio from video
