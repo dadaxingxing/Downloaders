@@ -2,7 +2,15 @@ import instaloader
 
 def download_reels(url, target_dir = 'downloaded_reels'):
     url = url.rstrip('/')
-    loader = instaloader.Instaloader()
+    loader = instaloader.Instaloader(
+        download_comments=False,
+        download_video_thumbnails=False,
+        download_geotags=False,
+        download_pictures=False,
+        download_videos=True,
+        save_metadata=False,
+        post_metadata_txt_pattern='',
+    )
     shortcode = url.split('/')[-1]
 
     try:
